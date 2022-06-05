@@ -1,0 +1,32 @@
+{
+    "name": "ll/dcat-log-viewer",
+    "alias": "日志查看",
+    "description": "用于查看laravel.log文件的日志",
+    "type": "library",
+    "keywords": ["dcat-admin", "extension"],
+    "homepage": "https://github.com/duolabmeng6/dcat-log-viewer",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "多啦b梦",
+            "email": "1715109585@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dcat\\Admin\\LogViewer\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "Dcat\\Admin\\LogViewer\\LogViewerServiceProvider",
+        "laravel": {
+            "providers": [
+                "Dcat\\Admin\\LogViewer\\LogViewerServiceProvider"
+            ]
+        }
+    }
+}
